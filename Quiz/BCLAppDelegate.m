@@ -7,6 +7,7 @@
 //
 
 #import "BCLAppDelegate.h"
+#import "BCLQuizViewController.h"
 
 @implementation BCLAppDelegate
 
@@ -14,6 +15,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    BCLQuizViewController *quizVC = [[BCLQuizViewController alloc] init];
+    self.window.rootViewController = quizVC;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

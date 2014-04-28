@@ -19,6 +19,8 @@
 		FC4DCA32190CAECB00726FC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4DCA1A190CAECA00726FC0 /* UIKit.framework */; };
 		FC4DCA3A190CAECB00726FC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC4DCA38190CAECB00726FC0 /* InfoPlist.strings */; };
 		FC4DCA3C190CAECB00726FC0 /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4DCA3B190CAECB00726FC0 /* QuizTests.m */; };
+		FCFBCA3C190CBB22001F425A /* BCLQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFBCA3A190CBB22001F425A /* BCLQuizViewController.m */; };
+		FCFBCA3D190CBB22001F425A /* BCLQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFBCA3B190CBB22001F425A /* BCLQuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		FC4DCA37190CAECB00726FC0 /* QuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuizTests-Info.plist"; sourceTree = "<group>"; };
 		FC4DCA39190CAECB00726FC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FC4DCA3B190CAECB00726FC0 /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		FCFBCA39190CBB22001F425A /* BCLQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCLQuizViewController.h; sourceTree = "<group>"; };
+		FCFBCA3A190CBB22001F425A /* BCLQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLQuizViewController.m; sourceTree = "<group>"; };
+		FCFBCA3B190CBB22001F425A /* BCLQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCLQuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,9 @@
 		FC4DCA0A190CAECA00726FC0 = {
 			isa = PBXGroup;
 			children = (
+				FCFBCA39190CBB22001F425A /* BCLQuizViewController.h */,
+				FCFBCA3A190CBB22001F425A /* BCLQuizViewController.m */,
+				FCFBCA3B190CBB22001F425A /* BCLQuizViewController.xib */,
 				FC4DCA1C190CAECA00726FC0 /* Quiz */,
 				FC4DCA35190CAECB00726FC0 /* QuizTests */,
 				FC4DCA15190CAECA00726FC0 /* Frameworks */,
@@ -221,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4DCA21190CAECA00726FC0 /* InfoPlist.strings in Resources */,
+				FCFBCA3D190CBB22001F425A /* BCLQuizViewController.xib in Resources */,
 				FC4DCA29190CAECA00726FC0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFBCA3C190CBB22001F425A /* BCLQuizViewController.m in Sources */,
 				FC4DCA27190CAECA00726FC0 /* BCLAppDelegate.m in Sources */,
 				FC4DCA23190CAECA00726FC0 /* main.m in Sources */,
 			);
@@ -358,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quiz/Quiz-Prefix.pch";
 				INFOPLIST_FILE = "Quiz/Quiz-Info.plist";
@@ -371,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quiz/Quiz-Prefix.pch";
 				INFOPLIST_FILE = "Quiz/Quiz-Info.plist";
@@ -438,6 +450,7 @@
 				FC4DCA41190CAECB00726FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4DCA42190CAECB00726FC0 /* Build configuration list for PBXNativeTarget "QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +459,7 @@
 				FC4DCA44190CAECB00726FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
